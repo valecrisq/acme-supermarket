@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import ProductList from './ProductList';
 
+import './styles/ProductContainer.css'
 
 const ProductContainer = () => {
     const [products, setProducts] = useState([]);
@@ -11,12 +12,12 @@ const ProductContainer = () => {
         setProducts(response.data.products);
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         getProducts();
     }, [])
 
     return (
-        <div>
+        <div className="products">
             <ProductList products={products} />
         </div>
     )

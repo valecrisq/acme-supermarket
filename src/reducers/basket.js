@@ -1,4 +1,4 @@
-import { BASKET_ADD_ITEM, BASKET_REMOVE_ITEM } from "../actions/basket";
+import { BASKET_ADD_ITEM, BASKET_REMOVE_ITEM, BASKET_REMOVE_ALL } from "../actions/basket";
 
 const basket = (state = [], action) => {
     switch (action.type) {
@@ -35,7 +35,21 @@ const basket = (state = [], action) => {
             return items;
 
         }
-        
+
+        case BASKET_REMOVE_ALL: {
+
+            const items = [...state]
+
+            items.forEach(item => {
+                item.qty = 0;
+            })
+
+            items.splice(0);
+
+            return items;
+
+        }
+
 
         default:
             return state;

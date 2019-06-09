@@ -1,5 +1,5 @@
-.main {
+.products {
     display: flex;
     flex-direction: row;
-    margin: 4rem 14rem 4rem 14rem
+    flex-wrap: wrap;
 }

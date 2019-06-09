@@ -8,6 +8,6 @@ export const offers = {
         return quantity >= 3 ? quantity * 4.50 : quantity * product.price
     },
 
-    "CF1": (product, quantity) => { return product.price * quantity},    
+    "CF1": (product, quantity) => { return product.price * quantity}
     
 }

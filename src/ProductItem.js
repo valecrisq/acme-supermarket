@@ -2,15 +2,25 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { basketAddItem, basketRemoveItem } from './actions/basket';
 
-import { Button } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
+
 
 const ProductItem = ({ product, dispatch }) => {
-    
+
     return (
-        <div style={{ marginTop: '2rem'}}>
-            <h5>{product.name} - {product.price} £ </h5>
-            <Button variant="light" size="sm" onClick={() => dispatch(basketAddItem(product))}>+</Button>
-            <Button variant="light" size="sm" onClick={() => dispatch(basketRemoveItem(product))} disabled={!product.qty}>-</Button>
+        <div>
+            <Card.Title>
+                <header>{product.name}</header>
+                <footer>{product.price} £</footer>
+            </Card.Title>
+            <hr />
+            <Card.Img variant="bottom" src={product.image} />
+            <Button variant="primary" size="sm" onClick={() => dispatch(basketAddItem(product))}>
+                <i className="fa fa-plus" />
+            </Button>
+            <Button variant="primary" size="sm" onClick={() => dispatch(basketRemoveItem(product))} disabled={!product.qty}>
+                <i className="fas fa-minus" />
+            </Button>
         </div>
     )
 }

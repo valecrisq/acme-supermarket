@@ -4,17 +4,43 @@
             "name": "Fruit Tea",
             "code": "FR1",
             "price": 3.11,
-            "offer": false
+            "image": "https://grabfoods.pk/wp-content/uploads/2017/12/14804.png",
+            "discount": true
         },
         {
             "name": "Strawberries",
             "code": "SR1",
-            "price": 5.00
+            "price": 5.00,
+            "image": "https://3.imimg.com/data3/NH/QE/MDC-7053092/images-slide3-fruits-strawberry-250x250.png",
+            "discount": true
         },
         {
             "name": "Coffee",
             "code": "CF1",
-            "price": 11.23
+            "price": 11.23,
+            "image": "http://coffeewar.com.ua/image/cache/catalog/kofe-v-kapsulah-200x200.png",
+            "discount": false
+        },
+        {
+            "name": "Pasta 500g",
+            "code": "PT1",
+            "price": 0.90,
+            "image": "https://s3-eu-west-2.amazonaws.com/medditeraneandirect/wp-content/uploads/2018/02/06160504/penne-gluten-free.png",
+            "discount": false
+        },
+        {
+            "name": "Apple 1kg",
+            "code": "AP1",
+            "price": 2.20,
+            "image": "https://newenglandapples.files.wordpress.com/2014/10/braeburn.png?w=500",
+            "discount": false
+        },
+        {
+            "name": "Bananas 1kg",
+            "code": "BN1",
+            "price": 0.78,
+            "image": "http://www.freepngclipart.com/thumb/banana/47197-juice-fruit-pic-banana-free-download-image-thumb.png",
+            "discount": false
         }
     ]
 }
