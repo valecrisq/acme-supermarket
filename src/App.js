@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.css';
-import Main from './Main';
+import Main from './components/Main';
 import { Provider } from 'react-redux';
 import reducers from './reducers';
 import { createStore } from 'redux';

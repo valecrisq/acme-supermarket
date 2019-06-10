@@ -1,9 +1,9 @@
 import React from 'react';
-import { basketRemoveAll } from './actions/basket'
+import { basketRemoveAll } from '../actions/basket'
 import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
-import { offers } from './Offers';
-import "./styles/Basket.css";
+import { offers } from '../Offers';
+import "../styles/Basket.css";
 
 
 
@@ -15,7 +15,7 @@ const Basket = ({ basket, dispatch }) => {
   return (
     <div className="basket">
       <header>
-        <i className="fa fa-shopping-cart fa-2x"></i>
+        <i className="fa fa-shopping-cart fa-2x" />
         <h5>Your basket</h5>
         <hr/>
       </header>

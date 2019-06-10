@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { basketAddItem, basketRemoveItem } from './actions/basket';
+import { basketAddItem, basketRemoveItem } from '../actions/basket';
 
 import { Button, Card } from 'react-bootstrap';
 

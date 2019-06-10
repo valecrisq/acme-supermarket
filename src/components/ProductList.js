@@ -3,7 +3,7 @@ import ProductItem from './ProductItem';
 
 import { Card } from "react-bootstrap";
 
-import './styles/ProductItem.css';
+import '../styles/ProductItem.css';
 
 const ProductList = ({ products }) => {
 
